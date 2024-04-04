@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: momox
+    database: raw
+
+    tables:
+
+      - name: products_jeans_boys
+      - name: products_shorts_boys
+      - name: products_longsleeve_boys
+      - name: products_poloshirt_boys
+      - name: products_tshirt_boys
