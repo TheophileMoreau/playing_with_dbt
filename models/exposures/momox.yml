@@ -1,0 +1,14 @@
+version: 2
+
+exposures :
+  - name: text_exposure
+    label: First test of building exposure
+    type: dashboard
+    description: >
+      What great description could I write ?
+
+    depends_on:
+      - ref('int_all_momox_articles')
+
+    owner:
+      name: Théophile MOREAU
