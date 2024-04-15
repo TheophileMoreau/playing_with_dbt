@@ -1,0 +1,40 @@
+semantic_models:
+    - name: total_items
+      model: ref('int_all_momox_articles')
+      description: >
+        Items from the momox scrap !
+      defaults:
+        agg_time_dimension: date
+
+      entities:
+        - name: product
+          type: primary
+          expr: PRODUCT_ID
+
+      dimensions:
+        - name: category
+          type: categorical
+          expr: PRODUCT_CATEGORY
+        - name: gender
+          type: categorical
+          expr: PRODUCT_GENDER
+        - name: date
+          type: time
+          type_params:
+            time_granularity: day
+          expr: EXTRACTED_AT
+
+      measures:
+        - name: total_products
+          description: Total number of products
+          agg: count_distinct
+          expr: PRODUCT_ID
+  
+metrics:
+- name: all_products
+  description: >
+    The number of products
+  type: SIMPLE  # Simple metrics use the measure as is
+  type_params:
+    measure: total_products
+  label: "All products"

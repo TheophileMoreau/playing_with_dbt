@@ -24,11 +24,10 @@ stg__momox__products_poloshirt_boys as (
 joined as (
 
     select
-        INDEX,
+        PRODUCT_ID,
         PRODUCT_URL,
         PRODUCT_CATEGORY,
         PRODUCT_GENDER,
-        PRODUCT_ID,
         PRODUCT_BRAND,
         PRODUCT_NAME,
         PRODUCT_PRICE,
@@ -53,11 +52,10 @@ joined as (
         stg__momox__products_jeans_boys
     union all
     select
-        INDEX,
+        PRODUCT_ID,
         PRODUCT_URL,
         PRODUCT_CATEGORY,
         PRODUCT_GENDER,
-        PRODUCT_ID,
         PRODUCT_BRAND,
         PRODUCT_NAME,
         PRODUCT_PRICE,
@@ -82,11 +80,10 @@ joined as (
         stg__momox__products_longsleeve_boys
     union all
     select
-        INDEX,
+        PRODUCT_ID,
         PRODUCT_URL,
         PRODUCT_CATEGORY,
         PRODUCT_GENDER,
-        PRODUCT_ID,
         PRODUCT_BRAND,
         PRODUCT_NAME,
         PRODUCT_PRICE,
@@ -111,11 +108,10 @@ joined as (
         stg__momox__products_poloshirt_boys
     union all
     select
-        INDEX,
+        PRODUCT_ID,
         PRODUCT_URL,
         PRODUCT_CATEGORY,
         PRODUCT_GENDER,
-        PRODUCT_ID,
         PRODUCT_BRAND,
         PRODUCT_NAME,
         PRODUCT_PRICE,
@@ -140,11 +136,10 @@ joined as (
         stg__momox__products_shorts_boys
     union all
     select
-        INDEX,
+        PRODUCT_ID,
         PRODUCT_URL,
         PRODUCT_CATEGORY,
         PRODUCT_GENDER,
-        PRODUCT_ID,
         PRODUCT_BRAND,
         PRODUCT_NAME,
         PRODUCT_PRICE,
